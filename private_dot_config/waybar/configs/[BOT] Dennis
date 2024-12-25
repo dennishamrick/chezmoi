@@ -23,10 +23,10 @@
 	"group/mobo_drawer",
 	"custom/separator#blank",
 	"group/laptop",
-	"custom/separator#line",
 	],
 
 "modules-center": [
+    "custom/separator#dot-line",
   "wlr/taskbar",
 	"custom/separator#line",
 	"hyprland/workspaces#kanji",
@@ -35,14 +35,12 @@
 
 "modules-right": [
 	"clock",
-	"group/connections",
 	"custom/separator#line",
+	"bluetooth",
 	"tray",
 	"mpris", 
 	"group/audio",
 	"custom/separator#line",
-	"keyboard-state",
-	"custom/keyboard",
 	"custom/lock",
 	"custom/power",
 	],

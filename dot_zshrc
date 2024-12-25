@@ -70,4 +70,7 @@ function wallustnow()
 { 
     wallust run $(swww query | grep -o "/home/.*")
 }
-
+function fav_wallpaper()
+{
+    cp $(swww query | grep -o "/home/.*") /home/dennis/Pictures/Fav_wallpapers
+}

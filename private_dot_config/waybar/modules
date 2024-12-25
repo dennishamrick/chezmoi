@@ -372,9 +372,9 @@
 },
 "clock": {
 	"interval": 1,
-    "format": "   {:%I:%M %p}", // AM PM format
-    //"format": " {:%H:%M:%S}", // 24H
-	"format-alt": "  {:%H:%M   %Y, %d %B, %A}",
+    "format": "󰥔  {:%I:%M %p}", // AM PM format
+    //"format": "󰥔  {:%H:%M:%S}", // 24H
+	"format-alt": "󰥔  {:%H:%M    %A, %B %d %Y}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
 		"mode": "year",
@@ -628,18 +628,18 @@
 },
 "wireplumber": {
 	"format": "{icon} {volume} %",
-	"format-muted": " Mute",
+	"format-muted": " Mute",
 	"on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
 	"on-click-right": "pavucontrol -t 3",
 	"on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
 	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
 	"format-icons": [
-		"", "", "󰕾", ""
+		"", "", "󰕾", ""
 	],
 },
 "wlr/taskbar": {
 	"format": "{icon}", 
-	"icon-size": 20,
+	"icon-size": 25,
 	"all-outputs": false,
 	"tooltip-format": "{title}",
 	"on-click": "activate",

@@ -26,12 +26,7 @@ pallete_light="light16"
 # kill swaybg if running
 pkill swaybg
 
-# Initialize swww if needed
-swww query || swww-daemon
 
-# Set swww options
-swww="swww img"
-effect="--transition-bezier .43,1.19,1,.4 --transition-fps 60 --transition-type grow --transition-pos 0.925,0.977 --transition-duration 2"
 
 # Determine current theme mode
 if [ "$(cat $HOME/.cache/.theme_mode)" = "Light" ]; then
@@ -113,18 +108,6 @@ else
 	sed -i '/^cursor /s/^cursor .*/cursor #000000/' "${kitty_conf}"
 fi
 
-
-
-
-# Set Dynamic Wallpaper for Dark or Light Mode
-if [ "$next_mode" = "Dark" ]; then
-    next_wallpaper="$(find "${dark_wallpapers}" -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | shuf -n1 -z | xargs -0)"
-else
-    next_wallpaper="$(find "${light_wallpapers}" -type f \( -iname "*.jpg" -o -iname "*.png" \) -print0 | shuf -n1 -z | xargs -0)"
-fi
-
-# Update wallpaper using swww command
-$swww "${next_wallpaper}" $effect
 
 
 # Set Kvantum Manager theme & QT5/QT6 settings

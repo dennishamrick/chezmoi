@@ -1,16 +1,11 @@
-/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
-/* ..........................................*/
-/* .......Mauve....................... */
-/* ......................................... */
-/* --- 👍 designed by https://github.com/CelestiaKai  👍 --- */
-
+/* Blue! */
+/* Edited from Mauve by me */
 * {
-	font-family: "IosevkaTermSlab Nerd Font Mono";
-	font-weight: bold;
+	font-family: "IosevkaTermSlab Nerd Font";
+    font-weight:bold;
 	min-height: 0;		
 	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-	font-size: 100%;
-	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	font-size: 98%;
 }
 
 window#waybar {
@@ -71,7 +66,7 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
+    border-radius: 3px;
     padding-left: 4px;
     padding-right: 4px;
     animation: gradient_f 20s ease-in infinite;
@@ -81,7 +76,7 @@ tooltip {
 #taskbar button.active,
 #workspaces button.active {
 	color: #1e1e1e;
-	border-radius: 30%;
+	border-radius: 20%;
 	background-color: #60aff1;
     padding-left: 6px;
     padding-right: 8px;
@@ -91,7 +86,7 @@ tooltip {
 
 #workspaces button.active:hover {
 	color: #1e1e1e;
-	border-radius: 30%;
+	border-radius: 20%;
 	background-color: #60aff1;
     padding-left: 6px;
     padding-right: 8px;
@@ -107,17 +102,6 @@ tooltip {
 	color: #1e1e1e;
 }
 
-#taskbar button:hover,
-#workspaces button:hover {
-	color: #1e1e1e;
-	border: 3px solid #14141f;
-	background-color: #60aff1;
-    border-radius: 30%;
- 	padding-left: 4px;
-    padding-right: 4px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
 
 #backlight,
 #backlight-slider,
