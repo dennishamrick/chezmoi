@@ -185,31 +185,9 @@ set_custom_gtk_theme() {
     fi
 
     if [ ${#icons[@]} -gt 0 ]; then
-        if [ "$mode" == "Dark" ]; then
-            selected_icon=${icons[RANDOM % ${#icons[@]}]}
-        else
-            selected_icon=${icons[$RANDOM % ${#icons[@]}]}
-        fi
-        echo "Selected icon theme for $mode mode: $selected_icon"
-        gsettings set $icon_setting "$selected_icon"
-        
-        ## QT5ct icon_theme
-        sed -i "s|^icon_theme=.*$|icon_theme=$selected_icon|" "$HOME/.config/qt5ct/qt5ct.conf"
-        sed -i "s|^icon_theme=.*$|icon_theme=$selected_icon|" "$HOME/.config/qt6ct/qt6ct.conf"
-
-        # Flatpak GTK apps (icons)
-        if command -v flatpak &> /dev/null; then
-            flatpak --user override --filesystem=$HOME/.icons
-            sleep 0.5
-            flatpak --user override --env=ICON_THEME="$selected_icon"
-        fi
-    else
-        echo "No $mode icon theme found"
-    fi
 }
 
 # Call the function to set GTK theme and icon theme based on mode
-set_custom_gtk_theme "$next_mode"
 
 # Update theme mode for the next cycle
 update_theme_mode
