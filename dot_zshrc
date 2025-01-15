@@ -20,7 +20,6 @@ source $ZSH/oh-my-zsh.sh
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
 fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
-
 # Set-up icons for files/folders in terminal using eza
 alias ls='eza -a --icons'
 alias ll='eza -al --icons'
@@ -54,7 +53,7 @@ function y() {
 export EDITOR=nvim
 export VISUAL=nvim
 alias vim='nvim'
-
+alias icat='kitten icat'
 # Created by `pipx` on 2024-12-05 16:28:38
 export PATH="$PATH:/home/dennis/.local/bin"
 
@@ -74,3 +73,4 @@ function fav_wallpaper()
 {
     cp $(swww query | grep -o "/home/.*") /home/dennis/Pictures/Fav_wallpapers
 }
+export PATH="$HOME/zig-linux-x86_64-0.13.0:$PATH"
