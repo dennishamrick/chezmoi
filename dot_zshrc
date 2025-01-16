@@ -9,6 +9,7 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
+    vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -54,6 +55,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 alias vim='nvim'
 alias icat='kitten icat'
+alias ghat='cat /home/dennis/Documents/ghat'
 # Created by `pipx` on 2024-12-05 16:28:38
 export PATH="$PATH:/home/dennis/.local/bin"
 
