@@ -35,3 +35,4 @@ end
 # <<< conda initialize <<<
 set -gx EDITOR nvim
 zoxide init fish | source
+
